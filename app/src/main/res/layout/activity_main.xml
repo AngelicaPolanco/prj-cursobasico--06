@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Peso (Kg)"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:layout_margin="3dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/peso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="peso (Kg)"
+            android:layout_weight=".6"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:background="#FFF"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Altura (m)"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:layout_margin="3dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/altura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Altura (m)"
+            android:layout_weight="0.6"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:background="#FFF"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Calcular"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/borrar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Borrar"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/imc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="IMC"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/bajopeso"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Bajo Peso"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Normal"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sobrepeso"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Sobrepeso"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/obesidad1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Obesidad I"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/obesidad2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Obesidad II"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/obesidad3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Obesidad III"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/obesidad4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Obesidad IV"
+        android:background="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_margin="3dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>
